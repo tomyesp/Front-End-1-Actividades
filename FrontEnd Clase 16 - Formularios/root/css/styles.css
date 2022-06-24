@@ -1,0 +1,304 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+/*header*/
+
+header{
+    font-family: 'Roboto', sans-serif;
+}
+
+.sup-bar{
+    background-color: #1CD1B0;
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-bar{
+    background-color: #00669F;
+    color: white;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-bar{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.nav-bar ul{
+    list-style-type: none;
+    display: flex;
+    gap: 24px;
+    margin-right: 24px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    
+}
+
+/*FORMULARIO MAIN*/
+.form{
+    background-color: #00669F;
+    height: 952px ;
+    width: 1154px;
+    margin-top: 50px;
+    border-radius: 6%;
+}
+
+.title-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: 15%;
+}
+
+.title-form h1{
+    font-size: 40px;
+    margin-bottom: 1px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.title-form h3{
+    font-size: 20px;
+    margin-top: 1px;
+}
+
+/*FORMULARIO parte izquierda*/
+
+.form-div{
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.left-div{
+    display: flex;
+    flex-direction: column;
+    width: 577px;
+    height: 651px;
+    font-size: 25px;
+    
+}
+
+.left-div div{
+    margin-left: 20%;
+    margin-right: 2.5%;
+}
+
+.nombre-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre-div label{
+    margin-bottom: 15px;
+}
+
+.fecha-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.fecha-div label{
+    margin-bottom: 15px;
+}
+
+.textarea-div{
+    margin-top: 10%;
+    height: 337px;
+}
+
+.textarea-div textarea{
+    resize: none;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    width: 99%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+    
+
+/*FORMULARIO parte derecha*/
+
+.right-div{
+    width: 577px;
+    height: 651px;
+    font-size: 25px;
+}
+
+.right-div div{
+    margin-right: 20%;
+    margin-left: 2.5%;
+}
+
+.especie-div{
+    display: flex;
+    flex-direction: column;
+    height: 109px;
+    padding: 0%;
+}
+
+.especie-div label{
+    margin-bottom: 15px;
+}
+
+.addfoto-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10.4%;
+}
+
+.addfoto-div label{
+    margin-bottom: 15px;
+}
+
+.foto-div{
+    height: 40px;
+    position: relative;
+    top: 10px;
+    border-radius: 5px;
+    background-color: #CECECE;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.foto-div:hover{
+    box-shadow: -1px 4px 50px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 4px 50px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 4px 50px -7px rgba(0,0,0,0.75);
+}
+
+.foto-div span{
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+#Foto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.checkbox-div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10.4%;
+}
+
+.checkbox-div label{
+    font-size: 20px;
+    margin-top: 15px;
+
+}
+
+
+.radio-div{
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    margin-top: 20px;
+}
+
+.radio-div label{
+    margin-top: 10px;
+}
+
+
+/*INPUTS*/
+.form-input{
+    border-radius: 10px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.especie-input{
+    border-radius: 10px;
+    height: 80px;
+    font-size: 20px;
+}
+
+.checkbox-input{
+    margin-right: 20px;
+}
+    
+
+/*button*/
+
+.button-div{
+    height: 80px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button-div button{
+    background-color: #1CD1B0;
+    height: 87px;
+    width: 466px;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    border: 1px #1CD1B0 solid ;
+}
+
+.button-div button:hover{
+    box-shadow: -1px 4px 50px -7px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 4px 50px -7px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 4px 50px -7px rgba(0,0,0,0.75);
+cursor: pointer;
+
+}
+
+/*footer*/
+.footer-div{
+    background-color: #00669F;
+    margin-bottom: 0;
+    height: 70px;
+    margin-top: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-div p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+    
+
+
+
+
+
+
+
+
+    

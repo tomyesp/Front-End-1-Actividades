@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="sup-bar">
+        <span>20% de descuento en todos los productos!</span>
+    </div>
+
+    <div class="main-bar">
+        <img src="./img/Logo (5).png" alt="Logo">
+        <h2>Nombre Tienda</h2>
+    </div>
+
+    <div class="nav-bar">
+        <nav>
+            <ul>
+                <li>Contacto</li>
+                <li>Registrarme</li>
+                <li>Ingresar</li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+      <section class="form">
+        <div class="title-form">
+          <h1>Añadí tu super!</h1>
+          <h3>Agregá tu personaje favorito completando las opciones.</h3>
+        </div>
+        
+        <!--FORMULARIO-->
+
+        <div>
+          <form action="resultado.html" method="POST">
+
+            <div class="form-div">
+                           <!--parte izquierda-->
+            <div class="left-div">
+
+              <div class="nombre-div">
+
+                <label for="nombre">*Nombre</label>
+
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  class="form-input"
+                />
+
+              </div>
+
+              <div class="fecha-div">
+                <label for="fecha">Fecha</label>
+
+                <input
+                 type="date"
+                  id="fecha"
+                  name="fecha"
+                  value="dd/mm/aaaa"
+                  min="2010-01-01"
+                  max="2022-12-31"
+                  class="form-input"
+                />
+              </div>
+
+              <div class="textarea-div">
+                <textarea
+                  name="descripcion"
+                  id="descripcion"
+                  placeholder="Descripción"
+                ></textarea>
+              </div>
+            </div>
+
+            <!--parte derecha-->
+            <div class="right-div">
+
+              <div class="especie-div">
+                    <label for="Especie">*Especie</label>
+
+                        <select name="Especie" id="Especie" placeholder="Especie" class="especie-input">
+                            <option class="especie-input" value="0">Especie</option>
+                            <option class="especie-input" value="1">Especie 1</option>
+                            <option class="especie-input" value="2">Especie 2</option>
+                            <option class="especie-input" value="3">Especie 3</option>
+                            <option class="especie-input" value="4">Especie 4</option>
+                        </select>
+              </div>
+                        
+
+              <div class="addfoto-div">
+
+                <label for="Foto">Agregar Foto</label>
+
+                <div class="foto-div">
+                  <span>Seleccionar archivo</span>
+                  <input type="file" name="foto" id="Foto" accept=".jpg" class="form-input">
+                </div>
+
+              </div>
+
+              <div class="checkbox-div">
+                <span>Poderes</span>
+    
+                    <label>
+                        <input type="checkbox" name="poder1" value="Volar" class="checkbox-input">Volar
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="poder2" value="SuperInteligencia" class="checkbox-input">SuperInteligencia
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="poder3" value="Vista de rayo láser" class="checkbox-input">Vista de rayo láser
+                    </label>
+    
+                    <label>
+                        <input type="checkbox" name="poder4" value="Billetera gorda" class="checkbox-input">Billetera gorda
+                    </label>
+
+              </div>
+
+              <div class="radio-div">
+                <label for="tipodepersonaje">Tipo de Personaje</label>
+    
+                    <label><input type="radio" name="tipodepersonaje" class="checkbox-input">Héroe / Heroina
+                    </label>
+    
+                    <label><input type="radio" name="tipodepersonaje" class="checkbox-input">Villano / Villana
+                    </label>
+
+              </div>
+
+            </div>
+
+            </div>
+
+            <div class="button-div">
+              <button>Añadir</button>
+            </div>
+          
+          
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-div">
+      <p>
+        Todos los derechos reservados a FRONT END 1
+      </p>
+    </footer>
+  </body>
+</html>
